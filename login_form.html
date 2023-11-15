@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form_style.css">
+    <title>User Authentication Form</title>
+</head>
+<body>
+    <header>
+        <h1>User Login</h1>
+        <p>Please enter your credentials to access the system.</p>
+    </header>
+    <section class="form-container">
+        <form action="process_login.php" method="post">
+            <div class="form-group">
+                <label for="eid">Employee ID (EID)</label>
+                <input type="text" id="eid" name="eid" placeholder="Enter your EID" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Log In</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
