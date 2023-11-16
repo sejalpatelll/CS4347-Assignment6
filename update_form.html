@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="update_form_style.css">
+    <title>User Authentication Form</title>
+</head>
+<body>
+    <header>
+        <h1>Password Update</h1>
+        <p>Please enter your new password to update your account.</p>
+    </header>
+    <section class="form-container">
+        <form action="process_login.php" method="post">
+            <div class="form-group">
+                <label for="eid">Employee ID (EID)</label>
+                <input type="text" id="eid" name="eid" placeholder="Enter your EID" required>
+            </div>
+            <div class="form-group">
+                <label for="oldPassword">Old Password</label>
+                <input type="oldPassword" id="oldPassword" name="oldPassword" placeholder="Enter your old password" required>
+            </div>
+            <div class="form-group">
+                <label for="newPassword">New Password</label>
+                <input type="newPassword" id="newPassword" name="newPassword" placeholder="Enter your new password" required>
+            </div>
+            <div class="form-group">
+                <button type="submit">Update</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+
